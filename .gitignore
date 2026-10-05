@@ -1,0 +1,15 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+TestResults/
+node_modules/
+/.idea/
+*.db
