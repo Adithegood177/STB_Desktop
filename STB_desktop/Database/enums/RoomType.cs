@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace STB_desktop.Database.enums
+namespace STB_desktop.Enums
 {
     public enum RoomType
     {

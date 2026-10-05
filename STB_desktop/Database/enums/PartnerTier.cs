@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace STB_desktop.Database.enums
+namespace STB_desktop.Enums
 {
     public enum PartnerTier
     {
-        Bronze = 0,
-        Silver = 1,
-        Gold = 2,
-        Platinum = 3
+        Default = 0,
+        Bronze = 1,
+        Silver = 2,
+        Gold = 3,
+        Platinum = 4
     }
 }
