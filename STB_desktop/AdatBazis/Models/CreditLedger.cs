@@ -14,10 +14,11 @@ public class CreditLedger
 
     
     [Required]
-    public Guid userId { get; set; }
+    public Guid UserId { get; set; }
 
 
-    [ForeignKey(nameof(userId))]
+
+    [ForeignKey(nameof(UserId))]
     public virtual Users User { get; set; } = null!;
 
     

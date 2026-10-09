@@ -1,5 +1,5 @@
-﻿// using viewmodels are not required here; DataContext is set from DI in App
-using STB_desktop.ViewModel;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,17 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace STB_desktop
+namespace STB_desktop.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserView : UserControl
     {
-        public MainWindow(MainViewModel viewModel)
+        public UserView()
         {
             InitializeComponent();
-            DataContext = viewModel;
         }
     }
 }

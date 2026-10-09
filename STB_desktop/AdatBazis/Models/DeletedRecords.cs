@@ -11,21 +11,21 @@ namespace STB_desktop
    public class DeletedRecords
     {
         [Key]
-        private Guid id;
+        private Guid Id;
         [Required]
-        private int userId { get; set; }
-        [ForeignKey(nameof(userId))]
+        private int UserId { get; set; }
+        [ForeignKey(nameof(UserId))]
         public virtual Users User { get; set; } = null!;
         [Required]
         [MaxLength(100)]
-        private string tableName { get; set; } = string.Empty;
+        private string TableName { get; set; } = string.Empty;
         [Required]
         [MaxLength(255)]
-        private string recordId { get; set; } = string.Empty;
+        private string RecordId { get; set; } = string.Empty;
 
         [Required]
-        private Guid deletedByUserid { get; set; }
-        [ForeignKey(nameof(deletedByUserid))]
+        private Guid DeletedByUserid { get; set; }
+        [ForeignKey(nameof(DeletedByUserid))]
         public virtual Users DeletedByUser { get; set; } = null!;
 
         [Required]

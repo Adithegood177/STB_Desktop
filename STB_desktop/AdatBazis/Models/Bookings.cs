@@ -11,25 +11,25 @@ namespace STB_desktop
     public class Bookings
     {
         [Key]
-        public Guid id {get; set;}
+        public Guid Id {get; set;}
         //userId
         [Required]
-        public int userId { get; set; }
-        [ForeignKey(nameof(userId))]
+        public int UserId { get; set; }
+        [ForeignKey(nameof(UserId))]
         public virtual Users User { get; set; } = null!;
         //AssetId   
-        public Guid? assetId { get; set; }
-        [ForeignKey(nameof(assetId))]
-        public virtual Assets Asset { get; set; }
+        public Guid? AssetId { get; set; }
+        [ForeignKey(nameof(AssetId))]
+        public virtual Asset Asset { get; set; }
         //RoomId
-        public virtual Guid? roomId { get; set; }
-        [ForeignKey(nameof(roomId))]
-        public virtual Rooms Room { get; set; }
+        public virtual Guid? RoomId { get; set; }
+        [ForeignKey(nameof(RoomId))]
+        public virtual Room Room { get; set; }
 
         //BookingUsage
-        public RoomType? bookingUsage { get; set; }
+        public RoomType? BookingUsage { get; set; }
         [Required]
-        public BookingStatus status { get; set; } = BookingStatus.PENDING;
+        public BookingStatus Status { get; set; } = BookingStatus.PENDING;
 
         //Dátumok és időpontok
         [Required]

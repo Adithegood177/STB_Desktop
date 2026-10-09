@@ -34,13 +34,13 @@ namespace STB_desktop
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
         public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.UtcNow;
         [Required]
-        public bool isDeleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
         public DateTimeOffset? DeletedAt { get; set; }
 
 
         public virtual ICollection<Bookings> Bookings { get; set; } = new List<Bookings>();
-        public virtual ICollection<Assets> Assets { get; set; } = new List<Assets>();
+        public virtual ICollection<Asset> Assets { get; set; } = new List<Asset>();
         public virtual ICollection<CreditLedger> CreditLedgers { get; set; } = new List<CreditLedger>();
 
         public virtual ICollection<DeletedRecords> DeletedRecords { get; set; } = new List<DeletedRecords>();

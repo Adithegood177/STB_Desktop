@@ -1,0 +1,21 @@
+﻿<Window x:Class="STB_desktop.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STB_desktop"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <StackPanel Grid.Row="2">
+
+            <TextBlock Text="Felhasználónév:" Grid.Row="2" Margin="5" Height="20" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="UsernameTextBox" Grid.Row="3" Margin="5" Height="20" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <TextBlock Text="Jelszó:" Grid.Row="4" Margin="5" Height="20" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <PasswordBox x:Name="PasswordBox" Grid.Row="5" Margin="5" Height="20" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Content="Bejelentkezés" Grid.Row="3" Margin="5" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+
+        </StackPanel>
+    </Grid>
+</Window>
